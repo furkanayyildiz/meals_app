@@ -30,9 +30,11 @@ class MyApp extends StatelessWidget {
               ),
             ),
       ),
-      home: CategoriesScreen(),
+      //home: CategoriesScreen(),
+      //initialRoute: '/', bunu ekleriz istersek başka bir sayfayı başlangıc yapcaksak ama şu an gerek yok "/" şu an başlangıç durumunda
       routes: {
-        "/category-meals": (ctx) => CategoryMealsScreen(),
+        "/": (ctx) => CategoriesScreen(),
+        CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
       },
     );
   }
