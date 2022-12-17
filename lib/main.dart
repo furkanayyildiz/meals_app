@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meals_app/screens/tabs_screen.dart';
 
 // page imports
 import "./screens/categories_screen.dart";
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
       //home: CategoriesScreen(),
       //initialRoute: '/', bunu ekleriz istersek başka bir sayfayı başlangıc yapcaksak ama şu an gerek yok "/" şu an başlangıç durumunda
       routes: {
-        "/": (ctx) => CategoriesScreen(),
+        "/": (ctx) => TabsScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
       },
